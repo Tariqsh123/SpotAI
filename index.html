@@ -418,6 +418,164 @@
 
 <!-- Why Future main container End -->
 
+<!-- Video AI Platform -->
+<div id="video-ai-platform-main-container">
+    <div id="video-ai-platform-inner-container">
+      <div id="video-ai-platform-heading-container">
+        <h2>Your Video AI platform</h2>
+      </div>
+
+      <div id="video-ai-platform-work-box-container">
+        <!-- Clickable Boxes -->
+        <div id="camera-box" class="video-ai-box">
+          <span>+</span>
+          <p>IP Cameras</p>
+        </div>
+        <div id="mobile-box" class="video-ai-box">
+          <span>+</span>
+          <p>Intelligence Video Recorder</p>
+        </div>
+        <div id="dashboard-box" class="video-ai-box">
+          <span>+</span>
+          <p>Cloud Dashboard</p>
+        </div>
+
+        <!-- Popups -->
+        <div id="popup-camera" class="popup-box" style="top: 15%; left: 25%;">
+          <span class="close-btn" onclick="hideAllPopups()">×</span>
+          <h3>IP Cameras</h3>
+          <p>Monitor your environment in real-time using intelligent IP cameras.</p>
+          <button>Learn More</button>
+        </div>
+
+        <div id="popup-mobile" class="popup-box" style="bottom: 15%; left: 20%;">
+          <span class="close-btn" onclick="hideAllPopups()">×</span>
+          <h3>Intelligent Video Recorder</h3>
+          <p>Record and analyze video streams with edge AI capabilities on mobile.</p>
+          <button>Learn More</button>
+        </div>
+
+        <div id="popup-dashboard" class="popup-box" style="top: 15%; right: 15%;">
+          <span class="close-btn" onclick="hideAllPopups()">×</span>
+          <h3>Cloud Dashboard</h3>
+          <p>Access powerful video analytics and reports through the cloud dashboard.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cameraBox = document.getElementById("camera-box");
+    const mobileBox = document.getElementById("mobile-box");
+    const dashboardBox = document.getElementById("dashboard-box");
+
+    const popupCamera = document.getElementById("popup-camera");
+    const popupMobile = document.getElementById("popup-mobile");
+    const popupDashboard = document.getElementById("popup-dashboard");
+
+    function hideAllPopups() {
+      popupCamera.style.display = "none";
+      popupMobile.style.display = "none";
+      popupDashboard.style.display = "none";
+    }
+
+    cameraBox.addEventListener("click", () => {
+      hideAllPopups();
+      popupCamera.style.display = "block";
+    });
+
+    mobileBox.addEventListener("click", () => {
+      hideAllPopups();
+      popupMobile.style.display = "block";
+    });
+
+    dashboardBox.addEventListener("click", () => {
+      hideAllPopups();
+      popupDashboard.style.display = "block";
+    });
+
+    // Optional: Close popups when clicking outside
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".video-ai-box") && !e.target.closest(".popup-box")) {
+        hideAllPopups();
+      }
+    });
+  </script>
+<!-- Video AI Platform End -->
+
+<!-- DATA Review Process -->
+ <div id="data-review-process-main-container">
+  <div id="data-review-process-inner-container">
+    <h2>Over 75,000 cameras deployed</h2>
+    <h4>1 billion hours of video data processed</h4>
+  </div>
+ </div>
+<!-- DATA Review Process End -->
+
+<!-- Badge Section -->
+ <div id="badge-section-main-container">
+  <div id="badge-section-inner-container">
+    <div id="badge-section-heading-container">
+      <h2>Our customers are raving about Video AI</h2>
+    </div>
+    <div id="badge-section-img-container">
+      <img src="https://cdn.prod.website-files.com/5fe2250e2f83cc02cbfefbcf/670670794e3ab64f784ecce2_High_Performer-2024-Summer%402x.avif" alt="">
+      <img src="https://cdn.prod.website-files.com/5fe2250e2f83cc02cbfefbcf/670670794e3ab64f784eccf4_High_Performer_MM-2024-Summer%402x.avif" alt="">
+      <img src="https://cdn.prod.website-files.com/5fe2250e2f83cc02cbfefbcf/670670794e3ab64f784ecd18_Users_Recommend-2024-Summer%402x.avif" alt="">
+      <img src="https://cdn.prod.website-files.com/5fe2250e2f83cc02cbfefbcf/6706707a4e3ab64f784ecd33_Best_Results_MM-2024-Summer%402x.avif" alt="">
+      <img src="https://cdn.prod.website-files.com/5fe2250e2f83cc02cbfefbcf/6706707a4e3ab64f784ecd67_Easiest_to_Do_Business_MM-2024-Summer%402x.avif" alt="">
+      <img src="https://cdn.prod.website-files.com/5fe2250e2f83cc02cbfefbcf/670670794e3ab64f784ecce2_High_Performer-2024-Summer%402x.avif" alt="">
+    </div>
+  </div>
+ </div>
+<!-- Badge Section End -->
+
+<!-- Guide Video Section -->
+ <div id="guide-video-main-container">
+  <div id="guide-video-inner-container">
+    <div id="guide-video-heading-container">
+      <h2>Your guide to Video AI</h2>
+    </div>
+    <div id="guide-video-card-container">
+    <!-- 1 -->
+    <div id="guide-video-card-box">
+      <img src="guide-video-blog 1.webp" alt="Guide Image" />
+      <h3>AI Copilot: Making every camera a smart observer</h3>
+      <p>Your AI assistant for cameras works for you and learns from you.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+    <!-- end -->
+    <!-- 2 -->
+    <div id="guide-video-card-box">
+      <img src="guide-video-blog 1.webp" alt="Guide Image" />
+      <h3>AI Copilot: Making every camera a smart observer</h3>
+      <p>Your AI assistant for cameras works for you and learns from you.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+    <!-- end -->
+    <!-- 3 -->
+    <div id="guide-video-card-box">
+      <img src="guide-video-blog 1.webp" alt="Guide Image" />
+      <h3>AI Copilot: Making every camera a smart observer</h3>
+      <p>Your AI assistant for cameras works for you and learns from you.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+    <!-- end -->
+
+    </div>
+  </div>
+ </div>
+<!-- Guide Video Section End -->
+
+<!-- Action Section -->
+ <div id="action-section-main-container">
+  <div id="action-section-inner-container">
+    <h2>See Spot AI in action</h2>
+    <button>Request A Demo</button>
+  </div>
+ </div>
+<!-- Action Section End -->
 
 
 </body>
