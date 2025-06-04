@@ -247,7 +247,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #f8f9fa;
-  padding: 10px 15px;
+  height: 60px;
+  padding:  0 10px;
 }
 
 .mob-logo {
@@ -257,7 +258,11 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
+.mob-logo img{
+  height: 90%;
+  width: auto;
+  object-fit: contain;
+}
 .mob-hamburger {
   font-size: 24px;
   cursor: pointer;
