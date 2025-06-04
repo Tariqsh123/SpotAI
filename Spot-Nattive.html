@@ -8,34 +8,52 @@
 </head>
 <body>
 <!-- Navbar -->
- <nav>
-    <div>
+<nav>
+  <div>
     <div id="logo-container">
-        <img src="logo.png" alt="">
+      <img src="logo.png" alt="">
     </div>
-    <ul>
-        <li>Live</li>
-        <li>Search</li>
-        <li>Wall</li>
-        <li>Cases</li>
-        <li>Shares</li>
-        <li>Intelligence</li>
-        <li>Maintain</li>
-        <li>Alert</li>
-        <li>Configure</li>
+    <ul id="nav-list">
+      <li data-target="live-container">Live</li>
+      <li>Search</li>
+      <li>Wall</li>
+      <li>Cases</li>
+      <li>Shares</li>
+      <li data-target="intelligence-container">Intelligence</li>
+      <li data-target="maintain-container">Maintain</li>
+      <li>Alert</li>
+      <li>Configure</li>
     </ul>
     <div id="nav-right-container">
-        <img src="https://img.icons8.com/?size=100&id=43752&format=png&color=737373" alt="">
-        <p>Profile</p>
+      <img src="https://img.icons8.com/?size=100&id=43752&format=png&color=737373" alt="">
+      <p>Profile</p>
     </div>
-    </div>
- </nav>
+  </div>
+</nav>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const navList = document.getElementById('nav-list');
+  const containers = document.querySelectorAll('.content-container');
+  navList.addEventListener('click', (e) => {
+    const target = e.target.getAttribute('data-target');
+    if (!target) return; 
+    containers.forEach(container => {
+      if (container.id === target) {
+        container.style.display = 'block';
+      } else {
+        container.style.display = 'none';
+      }
+    });
+  });
+});
+
+</script>
 <!-- Navbar End -->
 
 
 
 
-
+<div id="live-container" class="content-container">
 <div id="live-main-container">
 
   <!-- Left Container -->
@@ -147,39 +165,27 @@
     const drawerContent = document.getElementById("drawer-content");
     const videoElement = document.getElementById("main-video");
     const titleElement = document.getElementById("video-title");
-
     const cameraItems = document.querySelectorAll(".camera-item");
-
     const loadCamera = (li) => {
       const videoSrc = li.getAttribute("data-video-src");
       const title = li.getAttribute("data-title");
       const location = li.getAttribute("data-location");
-
-      // Update video
       videoElement.src = videoSrc;
       videoElement.load();
-
-      // Update title and location
       titleElement.innerHTML = `${title} <img src="https://img.icons8.com/?size=100&id=EpwgBizRWig8&format=png&color=737373" alt=""> <span>${location}</span>`;
-
-      // Update active state
       cameraItems.forEach(item => item.classList.remove("active"));
       li.classList.add("active");
     };
-
     cameraItems.forEach(li => {
       li.addEventListener("click", () => loadCamera(li));
     });
-
     if (cameraItems.length > 0) {
       loadCamera(cameraItems[0]);
     }
-
     toggleBtn.addEventListener("click", (event) => {
       event.stopPropagation();
       rightContainer.classList.toggle("open");
     });
-
     document.addEventListener("click", (event) => {
       if (
         rightContainer.classList.contains("open") &&
@@ -487,15 +493,10 @@
 </div>
 <script>
   window.addEventListener('load', function () {
-  // Existing popup references
   const videoPopup = document.getElementById('Video-popup');
   const selectCameraPopup = document.getElementById('Select-a-camera-popup');
   const timeFootagePopup = document.querySelector('[id^="Time-footage-popup-"]');
   const peoplePopup = document.querySelector('[id^="People-Popup-"]');
-
-  // Existing event listeners...
-
-  // Time-footage-popup NEXT button: close time popup, open people popup
   document.getElementById('Time-footage-popup-next-btn').addEventListener('click', function () {
     if (timeFootagePopup) {
       timeFootagePopup.style.display = 'none';
@@ -504,8 +505,6 @@
       peoplePopup.style.display = 'flex';
     }
   });
-
-  // People-popup PREV button: close people popup, open time popup
   document.getElementById('People-Popup-prev-btn').addEventListener('click', function () {
     if (peoplePopup) {
       peoplePopup.style.display = 'none';
@@ -514,17 +513,175 @@
       timeFootagePopup.style.display = 'flex';
     }
   });
-
-  // People-popup NEXT button: close people popup
   document.getElementById('People-Popup-next-btn').addEventListener('click', function () {
     if (peoplePopup) {
       peoplePopup.style.display = 'none';
     }
   });
 });
-
 </script>
 <!-- Sixth People Popup -->
+
+<!-- /* Seventh Clip Segment Popup */ -->
+ <div id="Clip-segment-popup-1" class="Clip-segment-popup" style="display: none;">
+  <div class="popup-container">
+    <p>View and manage clip segments captured during the selected timeframe</p>
+    <div class="buttons">
+      <button id="Clip-segment-popup-prev-btn">Prev</button>
+      <button id="Clip-segment-popup-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener('load', function () {
+    const clipSegmentPopup = document.getElementById('Clip-segment-popup-1');
+    const peoplePopup = document.getElementById('People-Popup-1');
+    const peopleNextBtn = document.getElementById('People-Popup-next-btn');
+    if (peopleNextBtn) {
+      peopleNextBtn.addEventListener('click', function () {
+        if (peoplePopup) peoplePopup.style.display = 'none';
+        if (clipSegmentPopup) clipSegmentPopup.style.display = 'flex';
+      });
+    }
+    const clipPrevBtn = document.getElementById('Clip-segment-popup-prev-btn');
+    if (clipPrevBtn) {
+      clipPrevBtn.addEventListener('click', function () {
+        if (clipSegmentPopup) clipSegmentPopup.style.display = 'none';
+        if (peoplePopup) peoplePopup.style.display = 'flex';
+      });
+    }
+    const clipNextBtn = document.getElementById('Clip-segment-popup-next-btn');
+    if (clipNextBtn) {
+      clipNextBtn.addEventListener('click', function () {
+        if (clipSegmentPopup) clipSegmentPopup.style.display = 'none';
+      });
+    }
+  });
+</script>
+<!-- /* Seventh Clip Segment Popup */ -->
+
+<!-- Eighth Mid Popup -->
+<div id="mid-popup-call" class="mid-popup-call" style="display: none;">
+  <div class="popup-container">
+    <p>Want to chat with us or continue the demo ?</p>
+    <div class="buttons">
+      <button id="book-call-btn">Book a Call</button>
+      <button id="continue-tour-btn">Continue to Tour</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener('load', function () {
+    const midPopup = document.getElementById('mid-popup-call');
+    const bookCallBtn = document.getElementById('book-call-btn');
+    const continueTourBtn = document.getElementById('continue-tour-btn');
+    const clipSegmentPopup = document.getElementById('Clip-segment-popup-1');
+    const clipNextBtn = document.getElementById('Clip-segment-popup-next-btn');
+    if (clipNextBtn) {
+      clipNextBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setTimeout(() => {
+          if (clipSegmentPopup) clipSegmentPopup.style.display = 'none';
+          if (midPopup) midPopup.style.display = 'flex';
+        }, 400);
+      });
+    }
+    if (bookCallBtn) {
+      bookCallBtn.addEventListener('click', function () {
+        window.open('https://api.whatsapp.com/send?phone=447463151997', '_blank');
+      });
+    }
+    if (continueTourBtn) {
+      continueTourBtn.addEventListener('click', function () {
+        midPopup.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  });
+</script>
+<!-- Eighth Mid Popup -->
+
+
+<!-- Ninth Intelligence Selection Popup -->
+<div id="intelligence-selection-popup" class="intelligence-selection-popup" style="display: none;">
+  <div class="popup-container">
+    <p>Select Intelligence</p>
+    <div class="buttons">
+      <button id="int-prev-btn">Prev</button>
+      <button id="int-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('load', function () {
+    const midPopup = document.getElementById('mid-popup-call');
+    const intelligencePopup = document.getElementById('intelligence-selection-popup');
+    const intPrevBtn = document.getElementById('int-prev-btn');
+    const intNextBtn = document.getElementById('int-next-btn');
+    const intelligenceListItem = document.querySelector('li[data-target="intelligence-container"]');
+
+    // Existing Elements
+    const clipSegmentPopup = document.getElementById('Clip-segment-popup-1');
+    const clipNextBtn = document.getElementById('Clip-segment-popup-next-btn');
+    const bookCallBtn = document.getElementById('book-call-btn');
+    const continueTourBtn = document.getElementById('continue-tour-btn');
+
+    if (clipNextBtn) {
+      clipNextBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setTimeout(() => {
+          if (clipSegmentPopup) clipSegmentPopup.style.display = 'none';
+          if (midPopup) midPopup.style.display = 'flex';
+        }, 400);
+      });
+    }
+
+    if (bookCallBtn) {
+      bookCallBtn.addEventListener('click', function () {
+        window.open('https://api.whatsapp.com/send?phone=447463151997', '_blank');
+      });
+    }
+
+    if (continueTourBtn) {
+      continueTourBtn.addEventListener('click', function () {
+        midPopup.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Show the new popup after continuing the tour
+        setTimeout(() => {
+          intelligencePopup.style.display = 'flex';
+        }, 500);
+      });
+    }
+
+    // Prev button on intelligence popup shows Eighth Mid Popup again
+    if (intPrevBtn) {
+      intPrevBtn.addEventListener('click', function () {
+        intelligencePopup.style.display = 'none';
+        midPopup.style.display = 'flex';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // Next button triggers click on the intelligence list item
+    if (intNextBtn) {
+      intNextBtn.addEventListener('click', function () {
+        if (intelligenceListItem) {
+          intelligenceListItem.click();
+          intelligencePopup.style.display = 'none';
+        }
+      });
+    }
+  });
+</script>
+<!-- Ninth Intelligence Selection Popup -->
+
+</div>
+
+
+
+<div id="intelligence-container" class="content-container" style="display:none;">This is the Intelligence container</div>
+<div id="maintain-container" class="content-container" style="display:none;">This is the Maintain container</div>
 
 
 
