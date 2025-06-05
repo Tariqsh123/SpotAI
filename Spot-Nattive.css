@@ -1510,6 +1510,289 @@ nav ul li {
 }
 
 
-/* Tenth Popup  */
+#intelligence-header-dashboard-heading-container{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intelligence-header-dashboard-heading-inner-container{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+#intelligence-header-dashboard-heading-inner-container h2{
+  color: #333333;
+  font-weight: 400;
+  font-size: x-large;
+}
+#intelligence-header-dashboard-heading-inner-container input{
+  font-weight: normal;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: small;
+  width: 300px;
+}
+#intelligence-header-dashboards-container{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intelligence-header-dashboards-inner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
 
+
+.dashboard-box {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-box canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* Dashboard Container End */
+
+/* Intelligence-Parking-lot-Analysis-Main-container */
+#Intelligence-Parking-lot-Analysis-Main-container{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Intelligence-Parking-lot-Analysis-inner-container{
+  height: fit-content;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 5px gainsboro;
+  border-radius: 5px;
+}
+#Intelligence-Parking-lot-Analysis-Top-container{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Intelligence-Parking-lot-Analysis-Top-container img{
+  height: 90%;
+  width: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+#Intelligence-Parking-lot-Analysis-Top-left-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 60%;
+}
+#Intelligence-Parking-lot-Analysis-Top-left-container h3{
+  font-size: x-large;
+  width: 90%;
+  text-align: left;
+  color: #222;
+}
+#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container{
+  height: fit-content;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} 
+#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p {
+  width: 90%;
+  text-align: left;
+  color: gray;
+  font-size: small;
+  position: relative;
+  padding-left: 20px; 
+}
+
+#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p::before {
+  content: "✔";
+  color: #0078ff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p span{
+  font-weight: 700;
+}
+/* Intelligence-Parking-lot-Analysis-Main-container */
+
+/* Intelligence-Parking-lot-Analysis-middle-header */
+#Intelligence-Parking-lot-Analysis-middle-container{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Intelligence-Parking-lot-Analysis-middle-header{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(rgb(0, 217, 255,0.2),rgb(0, 120, 255,0.2));
+}
+#Intelligence-Parking-lot-Analysis-middle-header h4 {
+  color: #0056b3;
+  font-size: x-large;
+  position: relative;
+  padding-left: 50px;
+}
+
+#Intelligence-Parking-lot-Analysis-middle-header h4::before {
+  content: "🚗";
+  position: absolute;
+  left: 0;
+  top:30%;
+  transform: translate(0%,-50%);
+}
+
+#Intelligence-Parking-lot-Analysis-middle-header select{
+  font-size: large;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+}
+#Intelligence-Parking-lot-Analysis-middle-header-right-container{
+  height: 80%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(0, 217, 255,0.4),rgb(0, 120, 255,0.4));
+  border-radius: 20px;
+  padding: 0px 10px;
+  gap: 20px;
+}
+#Intelligence-Parking-lot-Analysis-middle-header-right-container p{
+  margin: 0;
+  font-weight: 600;
+  color: black;
+}
+#Intelligence-Parking-lot-Analysis-middle-header-right-container p:first-of-type {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Intelligence-Parking-lot-Analysis-middle-header */
+
+/* Intelligence-Parking-lot-Analysis-middle-dashboard-container */
+#Intelligence-Parking-lot-Analysis-middle-dashboard-container{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#parkingChart {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* Intelligence-Parking-lot-Analysis-middle-dashboard-container */
+
+/* Intelligence-Parking-lot-Analysis-bottom-container */
+#Intelligence-Parking-lot-Analysis-bottom-container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+#intelligence-middle-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#intelligence-middle-table thead {
+  background-color: #0056b3;
+  color: white;
+}
+
+#intelligence-middle-table th,
+#intelligence-middle-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#intelligence-middle-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#intelligence-middle-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.intelligence-middle-table-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.intelligence-middle-table-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.intelligence-middle-table-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Intelligence-Parking-lot-Analysis-bottom-container */
 /* Intelligence Page End */

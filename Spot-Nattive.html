@@ -881,9 +881,211 @@
           </div>
         </div>
       </div>
+      <!-- Dashboard Container -->
+    <div id="intelligence-header-dashboard-heading-container">
+      <div id="intelligence-header-dashboard-heading-inner-container">
+        <h2>Dashboards</h2>
+        <input type="search" placeholder="Search Here">
+      </div>
     </div>
 
+    <div id="intelligence-header-dashboards-container">
+  <div id="intelligence-header-dashboards-container">
+  <div id="intelligence-header-dashboards-inner-container">
+    <div class="dashboard-box"><canvas id="chart1"></canvas></div>
+    <div class="dashboard-box"><canvas id="chart2"></canvas></div>
+    <div class="dashboard-box"><canvas id="chart3"></canvas></div>
+    <div class="dashboard-box"><canvas id="chart4"></canvas></div>
+    <div class="dashboard-box"><canvas id="chart5"></canvas></div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+function createBlueChart(id, type = 'bar') {
+  const ctx = document.getElementById(id).getContext('2d');
+  new Chart(ctx, {
+    type: type,
+    data: {
+      labels: ['A', 'B', 'C', 'D'],
+      datasets: [{
+        label: 'Blue Dataset',
+        data: [12, 19, 3, 5],
+        backgroundColor: 'rgba(0, 123, 255, 0.6)', // blue
+        borderColor: 'rgba(0, 123, 255, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+}
 
+// Create 5 charts
+createBlueChart('chart1', 'bar');
+createBlueChart('chart2', 'line');
+createBlueChart('chart3', 'bar');
+createBlueChart('chart4', 'line');
+createBlueChart('chart5', 'bar');
+</script>
+</div>
+<!-- Dashboard Container  End-->
+
+<!-- Parking Lot Vehicle Analysis -->
+ <div id="Intelligence-Parking-lot-Analysis-Main-container">
+  <div id="Intelligence-Parking-lot-Analysis-inner-container">
+    <!-- Top -->
+    <div id="Intelligence-Parking-lot-Analysis-Top-container">
+      <img src="SpotAi-Nattive-right-box-img.png" alt="">
+      <div id="Intelligence-Parking-lot-Analysis-Top-left-container">
+        <h3>Parking Lot Vehicle Analysis</h3>
+        <hr>
+        <div id="Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container">
+          <p>Camera <span>Parking Lot</span></p>
+          <p>Vehicle Idle <span>15 minutes</span></p>
+          <p>Location <span>California</span></p>
+          <p>Tracking <span>Daily 7PM to 8PM </span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Middle -->
+    <div id="Intelligence-Parking-lot-Analysis-middle-container">
+      <!-- Header -->
+       <div id="Intelligence-Parking-lot-Analysis-middle-header">
+        <h4>Vehicles Idle Time</h4>
+        <select name="" id="">
+          <option value="">June 5 2025</option>
+        </select>
+        <div id="Intelligence-Parking-lot-Analysis-middle-header-right-container">
+          <p>Daily</p>
+          <p>Monthlu</p>
+          <p>Yearly</p>
+        </div>
+       </div>
+      <!-- Header End-->
+       <!-- Middle Dashboard Container -->
+        <div id="Intelligence-Parking-lot-Analysis-middle-dashboard-container">
+          <canvas id="parkingChart"></canvas>
+        </div>
+<script>
+  const ctx = document.getElementById('parkingChart').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'],
+      datasets: [{
+        label: 'Vehicles Parked',
+        data: [12, 19, 8, 14, 6, 11, 9, 13, 7, 10, 15, 5, 17], // Example data
+        backgroundColor: 'rgba(0, 123, 255, 0.7)',
+        borderColor: 'rgba(0, 123, 255, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+        <!-- Middle Dashboard Container -->
+    </div>
+    <!-- Bottom -->
+    <div id="Intelligence-Parking-lot-Analysis-bottom-container">
+  <table id="intelligence-middle-table" class="intelligence-middle-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>ID No</th>
+        <th>Time Length</th>
+        <th>Day & Date of Entry</th>
+        <th>Day & Date of Exit</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>001</td>
+        <td>2h 30m</td>
+        <td>Mon, 2025-06-01</td>
+        <td>Mon, 2025-06-01</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>002</td>
+        <td>1h 45m</td>
+        <td>Tue, 2025-06-02</td>
+        <td>Tue, 2025-06-02</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>003</td>
+        <td>3h 15m</td>
+        <td>Wed, 2025-06-03</td>
+        <td>Wed, 2025-06-03</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 4 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>004</td>
+        <td>4h 00m</td>
+        <td>Thu, 2025-06-04</td>
+        <td>Thu, 2025-06-04</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 5 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>005</td>
+        <td>1h 20m</td>
+        <td>Fri, 2025-06-05</td>
+        <td>Fri, 2025-06-05</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 6 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>006</td>
+        <td>2h 10m</td>
+        <td>Sat, 2025-06-06</td>
+        <td>Sat, 2025-06-06</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    </div>
+  </div>
+ </div>
+<!-- Parking Lot Vehicle Analysis End -->
+
+    </div>
+
+    
     <!-- intelligence-container -->
 
     <!-- maintain-container -->
