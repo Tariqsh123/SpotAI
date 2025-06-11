@@ -5,7 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-
 nav {
   height: 60px;
   width: 100%;
@@ -134,7 +133,7 @@ nav ul li {
 #live-left-video-main-container {
   height: fit-content;
   width: 100%;
-  display: flex; /* visible initially */
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -276,7 +275,6 @@ nav ul li {
   }
 }
 /* Left Video + all Container End */
-
 /* Right Container */
 #live-right-container {
   height: 100vh;
@@ -287,7 +285,6 @@ nav ul li {
   align-items: center;
   z-index: 999;
 }
-
 #drawer-toggle {
   position: absolute;
   left: -40px;
@@ -304,7 +301,6 @@ nav ul li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
-
 #drawer-content {
   width: 300px;
   height: 100vh;
@@ -318,15 +314,12 @@ nav ul li {
   overflow-y: auto;
   border-left: 1px solid #ddd;
 }
-
 #live-right-container.open #drawer-content {
   right: 0;
 }
-
 #live-right-container.open #drawer-toggle {
   transform: translateY(-50%) rotate(180deg);
 }
-
 #drawer-content h3 {
   margin-top: 0;
   font-size: 20px;
@@ -334,13 +327,11 @@ nav ul li {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
-
 #drawer-content ul {
   list-style: none;
   padding: 0;
   margin: 20px 0 0 0;
 }
-
 #drawer-content ul li {
   height: 80px;
   width: 100%;
@@ -384,9 +375,8 @@ nav ul li {
   font-size: x-small;
   font-weight: 500;
   position: relative;
-  padding-left: 20px; /* space for icon */
+  padding-left: 20px;
 }
-
 #drawer-content-box-text-container span::before {
   content: "✔";
   color: green;
@@ -399,14 +389,12 @@ nav ul li {
 #drawer-content ul li:hover {
   background-color: whitesmoke;
 }
-
 #drawer-content ul li:hover h6 {
   color: #00d9ff;
 }
 #drawer-content ul li.active {
   background-color: whitesmoke;
 }
-
 #drawer-content ul li.active h6 {
   color: #0078ff;
 }
@@ -435,7 +423,6 @@ nav ul li {
     font-size: x-small;
   }
 }
-
 /* Liver OverView */
 #live-overview-main-container {
   height: fit-content;
@@ -478,9 +465,8 @@ nav ul li {
   color: #0078ff;
   position: relative;
   font-size: large;
-  padding-left: 50px; /* leave enough space for bigger icons */
+  padding-left: 50px;
 }
-
 /* First li - clock icon */
 #live-overview-date-time-contaier li:nth-child(1)::before {
   content: "";
@@ -494,7 +480,6 @@ nav ul li {
   top: 50%;
   transform: translateY(-50%);
 }
-
 /* Second li - calendar icon */
 #live-overview-date-time-contaier li:nth-child(2)::before {
   content: "";
@@ -543,7 +528,6 @@ nav ul li {
   background: rgba(77, 1, 255, 0.3);
   color: rgb(33, 0, 110);
 }
-
 /* CliP Segment */
 #live-overview-clip-segment-container {
   height: fit-content;
@@ -562,7 +546,6 @@ nav ul li {
   position: relative;
   padding-left: 25px;
 }
-
 #live-overview-clip-segment-container h6::before {
   content: "?";
   position: absolute;
@@ -591,7 +574,6 @@ nav ul li {
   align-items: center;
   box-sizing: border-box;
 }
-
 #live-overview-screenshot-container img {
   width: 150px;
   height: auto;
@@ -627,7 +609,6 @@ nav ul li {
     font-size: small;
   }
 }
-
 /*First Onload Popup */
 .Onload-popup {
   position: fixed;
@@ -638,14 +619,12 @@ nav ul li {
   align-items: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 .Onload-popup-overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
 }
-
 .Onload-popup-box {
   position: relative;
   background-color: #ffffff;
@@ -658,26 +637,22 @@ nav ul li {
   text-align: center;
   color: #222222;
 }
-
 .Onload-heading {
   font-size: 26px;
   margin-bottom: 12px;
   font-weight: 600;
   color: #111111;
 }
-
 .Onload-heading span {
   color: #0056b3;
   font-weight: 700;
 }
-
 .Onload-subheading {
   font-size: 16px;
   margin-bottom: 20px;
   color: #444444;
   font-weight: 500;
 }
-
 .Onload-list {
   list-style-type: disc;
   margin: 0 auto 20px auto;
@@ -687,14 +662,12 @@ nav ul li {
   font-size: 15px;
   line-height: 1.5;
 }
-
 .Onload-note {
   font-size: 13px;
   color: #666666;
   margin-bottom: 28px;
   font-style: italic;
 }
-
 .Onload-button {
   background-color: #004494;
   color: #ffffff;
@@ -706,19 +679,15 @@ nav ul li {
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
-
 .Onload-button:hover {
   background-color: #0056b3;
 }
-
 .Onload-powered {
   margin-top: 22px;
   font-size: 13px;
   color: #999999;
 }
-
 /*First Onload Popup */
-
 /* Second Drawer Popup */
 .Drawer-popup {
   display: none;
@@ -773,7 +742,6 @@ nav ul li {
   background: #0056b3;
 }
 /* Second Drawer Popup */
-
 /* third Select a Camera Popup */
 .Select-a-camera-popup {
   position: fixed;
@@ -830,7 +798,6 @@ nav ul li {
   background-color: #0056b3;
 }
 /* third Select a Camera Popup */
-
 /* Fourth Video Popup */
 .Video-popup {
   position: fixed;
@@ -886,7 +853,6 @@ nav ul li {
   background-color: #0056b3;
 }
 /* Fourth Video Popup */
-
 /* Time Footage Popup */
 #Time-footage-popup-1 {
   position: fixed;
@@ -942,7 +908,6 @@ nav ul li {
   background-color: #0056b3;
 }
 /* Time Footage Popup */
-
 /* Sixth People Popup */
 .People-Popup {
   position: fixed;
@@ -994,7 +959,6 @@ nav ul li {
   background-color: #0056b3;
 }
 /* Sixth People Popup */
-
 /* Seventh Clip Segment Popup */
 .Clip-segment-popup {
   position: fixed;
@@ -1008,7 +972,6 @@ nav ul li {
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 .Clip-segment-popup .popup-container {
   background-color: #fff;
   padding: 10px;
@@ -1020,7 +983,6 @@ nav ul li {
   left: 30%;
   top: 60%;
 }
-
 .Clip-segment-popup .popup-container p {
   font-size: small;
   font-weight: 500;
@@ -1033,7 +995,6 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
-
 .Clip-segment-popup .buttons button {
   font-size: small;
   border: none;
@@ -1043,13 +1004,10 @@ nav ul li {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .Clip-segment-popup .buttons button:hover {
   background-color: #0056b3;
 }
-
 /* Seventh Clip Segment Popup */
-
 /* Eighth Mid Call Popup */
 .mid-popup-call {
   position: fixed;
@@ -1063,7 +1021,6 @@ nav ul li {
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 .mid-popup-call .popup-container {
   background-color: #fff;
   padding: 10px;
@@ -1076,20 +1033,17 @@ nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .mid-popup-call .popup-container p {
   font-size: small;
   font-weight: 500;
   color: #333;
   margin-bottom: 1.8rem;
 }
-
 .mid-popup-call .buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-
 .mid-popup-call .buttons button {
   font-size: small;
   border: none;
@@ -1100,12 +1054,10 @@ nav ul li {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .mid-popup-call .buttons button:hover {
   background-color: #0056b3;
 }
 /* Eighth Mid Call Popup */
-
 /* Ninth Intelligence selector popup */
 .intelligence-selection-popup {
   position: fixed;
@@ -1360,7 +1312,6 @@ nav ul li {
     top: 70%;
   }
 }
-
 /* Intelligence and Maintain Wrapper */
 .content-container {
   display: none;
@@ -1369,7 +1320,6 @@ nav ul li {
 #live-container {
   display: block;
 }
-
 /* Intelligence Page */
 #intelligence-header-main-container {
   height: 300px;
@@ -1387,37 +1337,37 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
-#intelligence-header-left-box{
+#intelligence-header-left-box {
   height: 80%;
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-    align-items: center;
-    gap: 20px;
+  align-items: center;
+  gap: 20px;
 }
-#intelligence-header-left-box img{
+#intelligence-header-left-box img {
   height: 100px;
   width: auto;
   object-fit: contain;
 }
-#intelligence-header-left-box h2{
+#intelligence-header-left-box h2 {
   font-size: 35px;
   color: #005ecb;
   width: 100%;
   text-align: center;
   font-weight: 100;
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
   #intelligence-header-main-container {
-  height: 250px;
-}
-#intelligence-header-left-box img {
+    height: 250px;
+  }
+  #intelligence-header-left-box img {
     height: 80px;
   }
-  #intelligence-header-left-box h2{
-  font-size: 25px;
-}
+  #intelligence-header-left-box h2 {
+    font-size: 25px;
+  }
 }
 #intelligence-header-middle-box {
   height: 80%;
@@ -1428,27 +1378,27 @@ nav ul li {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgb(0, 94, 203,0.1);
+  background-color: rgb(0, 94, 203, 0.1);
   border: 1px solid #004494;
   border-radius: 10px;
   padding: 10px;
   padding-top: 30px;
-  box-shadow: 0 0 3px 1px #005ecb; 
+  box-shadow: 0 0 3px 1px #005ecb;
   background-clip: border-box;
   justify-content: left;
   gap: 20px;
 }
-#intelligence-header-middle-box h2{
+#intelligence-header-middle-box h2 {
   font-size: 35px;
   color: #005ecb;
   font-weight: 100;
 }
-#intelligence-header-middle-box p{
+#intelligence-header-middle-box p {
   font-size: medium;
   font-weight: 100;
   width: 80%;
 }
-#intelligence-header-middle-box button{
+#intelligence-header-middle-box button {
   font-size: medium;
   color: white;
   font-weight: 900;
@@ -1467,7 +1417,7 @@ nav ul li {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgb(128, 0, 128,0.1);
+  background-color: rgb(128, 0, 128, 0.1);
   border: 1px solid purple;
   border-radius: 10px;
   box-shadow: 0 0 3px 1px purple;
@@ -1477,17 +1427,17 @@ nav ul li {
   padding-top: 30px;
   gap: 20px;
 }
-#intelligence-header-right-box h2{
+#intelligence-header-right-box h2 {
   font-size: 35px;
   color: purple;
   font-weight: 100;
 }
-#intelligence-header-right-box p{
+#intelligence-header-right-box p {
   font-size: medium;
   font-weight: 100;
   width: 80%;
 }
-#intelligence-header-right-box button{
+#intelligence-header-right-box button {
   font-size: medium;
   color: white;
   font-weight: 900;
@@ -1497,27 +1447,28 @@ nav ul li {
   width: fit-content;
   padding: 8px 20px;
 }
-@media (max-width: 991px){
-  #intelligence-header-middle-box h2,#intelligence-header-right-box h2 {
+@media (max-width: 991px) {
+  #intelligence-header-middle-box h2,
+  #intelligence-header-right-box h2 {
     font-size: 25px;
   }
-  #intelligence-header-right-box p,#intelligence-header-middle-box p {
+  #intelligence-header-right-box p,
+  #intelligence-header-middle-box p {
     font-size: small;
   }
-  #intelligence-header-middle-box button,#intelligence-header-right-box button {
+  #intelligence-header-middle-box button,
+  #intelligence-header-right-box button {
     font-size: small;
   }
 }
-
-
-#intelligence-header-dashboard-heading-container{
+#intelligence-header-dashboard-heading-container {
   height: fit-content;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#intelligence-header-dashboard-heading-inner-container{
+#intelligence-header-dashboard-heading-inner-container {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -1526,12 +1477,12 @@ nav ul li {
   justify-content: space-between;
   align-items: center;
 }
-#intelligence-header-dashboard-heading-inner-container h2{
+#intelligence-header-dashboard-heading-inner-container h2 {
   color: #333333;
   font-weight: 400;
   font-size: x-large;
 }
-#intelligence-header-dashboard-heading-inner-container input{
+#intelligence-header-dashboard-heading-inner-container input {
   font-weight: normal;
   text-align: center;
   padding: 5px;
@@ -1540,7 +1491,7 @@ nav ul li {
   font-size: small;
   width: 300px;
 }
-#intelligence-header-dashboards-container{
+#intelligence-header-dashboards-container {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -1556,8 +1507,6 @@ nav ul li {
   width: 100%;
   max-width: 1200px;
 }
-
-
 .dashboard-box {
   width: 300px;
   height: 200px;
@@ -1565,27 +1514,25 @@ nav ul li {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .dashboard-box canvas {
   width: 100% !important;
   height: 100% !important;
 }
 /* Dashboard Container End */
-
 /* Intelligence-Parking-lot-Analysis-Main-container */
-#Intelligence-Parking-lot-Analysis-Main-container{
+#Intelligence-Parking-lot-Analysis-Main-container {
   height: fit-content;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#Intelligence-Parking-lot-Analysis-inner-container{
+#Intelligence-Parking-lot-Analysis-inner-container {
   height: fit-content;
   max-width: 1200px;
   width: 100%;
@@ -1597,20 +1544,20 @@ nav ul li {
   box-shadow: 1px 1px 5px gainsboro;
   border-radius: 5px;
 }
-#Intelligence-Parking-lot-Analysis-Top-container{
+#Intelligence-Parking-lot-Analysis-Top-container {
   height: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#Intelligence-Parking-lot-Analysis-Top-container img{
+#Intelligence-Parking-lot-Analysis-Top-container img {
   height: 90%;
   width: auto;
   border-radius: 20px;
   object-fit: cover;
 }
-#Intelligence-Parking-lot-Analysis-Top-left-container{
+#Intelligence-Parking-lot-Analysis-Top-left-container {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1619,13 +1566,13 @@ nav ul li {
   flex-direction: column;
   width: 60%;
 }
-#Intelligence-Parking-lot-Analysis-Top-left-container h3{
+#Intelligence-Parking-lot-Analysis-Top-left-container h3 {
   font-size: x-large;
   width: 90%;
   text-align: left;
   color: #222;
 }
-#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container{
+#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container {
   height: fit-content;
   width: 100%;
   gap: 10px;
@@ -1634,16 +1581,15 @@ nav ul li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-} 
+}
 #Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p {
   width: 90%;
   text-align: left;
   color: gray;
   font-size: small;
   position: relative;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
-
 #Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p::before {
   content: "✔";
   color: #0078ff;
@@ -1651,14 +1597,12 @@ nav ul li {
   left: 0;
   top: 0;
 }
-
-#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p span{
+#Intelligence-Parking-lot-Analysis-Top-left-bottom-item-container p span {
   font-weight: 700;
 }
 /* Intelligence-Parking-lot-Analysis-Main-container */
-
 /* Intelligence-Parking-lot-Analysis-middle-header */
-#Intelligence-Parking-lot-Analysis-middle-container{
+#Intelligence-Parking-lot-Analysis-middle-container {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -1666,14 +1610,14 @@ nav ul li {
   align-items: center;
   flex-direction: column;
 }
-#Intelligence-Parking-lot-Analysis-middle-header{
+#Intelligence-Parking-lot-Analysis-middle-header {
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 20px 20px 0 0;
-  background: linear-gradient(rgb(0, 217, 255,0.2),rgb(0, 120, 255,0.2));
+  background: linear-gradient(rgb(0, 217, 255, 0.2), rgb(0, 120, 255, 0.2));
 }
 #Intelligence-Parking-lot-Analysis-middle-header h4 {
   color: #0056b3;
@@ -1681,47 +1625,44 @@ nav ul li {
   position: relative;
   padding-left: 50px;
 }
-
 #Intelligence-Parking-lot-Analysis-middle-header h4::before {
   content: "🚗";
   position: absolute;
   left: 0;
-  top:30%;
-  transform: translate(0%,-50%);
+  top: 30%;
+  transform: translate(0%, -50%);
 }
-
-#Intelligence-Parking-lot-Analysis-middle-header select{
+#Intelligence-Parking-lot-Analysis-middle-header select {
   font-size: large;
   font-weight: 700;
   border: none;
   background: transparent;
 }
-#Intelligence-Parking-lot-Analysis-middle-header-right-container{
+#Intelligence-Parking-lot-Analysis-middle-header-right-container {
   height: 80%;
   width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(0, 217, 255,0.4),rgb(0, 120, 255,0.4));
+  background: linear-gradient(rgb(0, 217, 255, 0.4), rgb(0, 120, 255, 0.4));
   border-radius: 20px;
   padding: 0px 10px;
   gap: 20px;
 }
-#Intelligence-Parking-lot-Analysis-middle-header-right-container p{
+#Intelligence-Parking-lot-Analysis-middle-header-right-container p {
   margin: 0;
   font-weight: 600;
   color: black;
 }
-#Intelligence-Parking-lot-Analysis-middle-header-right-container p:first-of-type {
+#Intelligence-Parking-lot-Analysis-middle-header-right-container
+  p:first-of-type {
   background: white;
   padding: 5px 10px;
   border-radius: 20px;
 }
-
 /* Intelligence-Parking-lot-Analysis-middle-header */
-
 /* Intelligence-Parking-lot-Analysis-middle-dashboard-container */
-#Intelligence-Parking-lot-Analysis-middle-dashboard-container{
+#Intelligence-Parking-lot-Analysis-middle-dashboard-container {
   height: 400px;
   width: 100%;
   display: flex;
@@ -1733,7 +1674,6 @@ nav ul li {
   height: 100% !important;
 }
 /* Intelligence-Parking-lot-Analysis-middle-dashboard-container */
-
 /* Intelligence-Parking-lot-Analysis-bottom-container */
 #Intelligence-Parking-lot-Analysis-bottom-container {
   height: fit-content;
@@ -1744,7 +1684,6 @@ nav ul li {
   align-items: center;
   overflow-x: auto;
 }
-
 #intelligence-middle-table {
   border-collapse: collapse;
   width: 100%;
@@ -1752,33 +1691,27 @@ nav ul li {
   text-align: center;
   font-family: Arial, sans-serif;
 }
-
 #intelligence-middle-table thead {
   background-color: #0056b3;
   color: white;
 }
-
 #intelligence-middle-table th,
 #intelligence-middle-table td {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
 #intelligence-middle-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
-
 #intelligence-middle-table tr:hover {
   background-color: #f1f1f1;
 }
-
 .intelligence-middle-table-img {
   width: 50px;
   height: 50px;
   object-fit: cover;
   border-radius: 4px;
 }
-
 .intelligence-middle-table-btn {
   background-color: #007bff;
   color: white;
@@ -1789,10 +1722,8 @@ nav ul li {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-
 .intelligence-middle-table-btn:hover {
   background-color: #0056b3;
 }
-
 /* Intelligence-Parking-lot-Analysis-bottom-container */
 /* Intelligence Page End */
