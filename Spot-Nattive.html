@@ -1078,16 +1078,558 @@ createBlueChart('chart5', 'bar');
   </div>
  </div>
 <!-- Parking Lot Vehicle Analysis End -->
+</div>
 
+<!-- Intelligence First Popup -->
+ <div class="intelligence-first-popup" style="display: none">
+  <div class="popup-container">
+    <p>
+      Intelligence dashboards help you unlock powerful new insights about your
+      physical operations
+    </p>
+    <div class="buttons">
+      <button id="Intelligence-first-prev-btn">Prev</button>
+      <button id="Intelligence-first-next-btn">Next</button>
     </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const midPopup = document.getElementById("mid-popup-call");
+    const intelligencePopup = document.getElementById("intelligence-selection-popup");
+    const intPrevBtn = document.getElementById("int-prev-btn");
+    const intNextBtn = document.getElementById("int-next-btn");
+    const intelligenceListItem = document.querySelector('li[data-target="intelligence-container"]');
+    const clipSegmentPopup = document.getElementById("Clip-segment-popup-1");
+    const clipNextBtn = document.getElementById("Clip-segment-popup-next-btn");
+    const bookCallBtn = document.getElementById("book-call-btn");
+    const continueTourBtn = document.getElementById("continue-tour-btn");
+    const firstPopup = document.querySelector(".intelligence-first-popup");
+    const firstPrevBtn = document.getElementById("Intelligence-first-prev-btn");
+    const firstNextBtn = document.getElementById("Intelligence-first-next-btn");
+    const liveListItem = document.querySelector('li[data-target="live-container"]');
+    if (clipNextBtn) {
+      clipNextBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => {
+          if (clipSegmentPopup) clipSegmentPopup.style.display = "none";
+          if (midPopup) midPopup.style.display = "flex";
+        }, 400);
+      });
+    }
+    if (bookCallBtn) {
+      bookCallBtn.addEventListener("click", function () {
+        window.open("https://api.whatsapp.com/send?phone=447463151997", "_blank");
+      });
+    }
+    if (continueTourBtn) {
+      continueTourBtn.addEventListener("click", function () {
+        if (midPopup) midPopup.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => {
+          if (intelligencePopup) intelligencePopup.style.display = "flex";
+        }, 500);
+      });
+    }
+    if (intPrevBtn) {
+      intPrevBtn.addEventListener("click", function () {
+        if (intelligencePopup) intelligencePopup.style.display = "none";
+        if (midPopup) midPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (intNextBtn) {
+      intNextBtn.addEventListener("click", function () {
+        if (intelligencePopup) intelligencePopup.style.display = "none";
+        if (firstPopup) firstPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (intelligenceListItem) intelligenceListItem.click();
+      });
+    }
+    if (firstPrevBtn) {
+      firstPrevBtn.addEventListener("click", function () {
+        if (firstPopup) firstPopup.style.display = "none";
+        if (intelligencePopup) intelligencePopup.style.display = "flex";
+        if (liveListItem) liveListItem.click();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (firstNextBtn) {
+      firstNextBtn.addEventListener("click", function () {
+        if (firstPopup) firstPopup.style.display = "none";
+      });
+    }
+  });
+</script>
+<!-- Intelligence First Popup  End-->
 
-    
+<!-- Intelligence Second Popup  -->
+<div class="intelligence-second-popup" id="intelligence-second-popup" style="display: none">
+  <div class="popup-container">
+    <p>Select the Parking Lot Vehicle Analysis</p>
+    <div class="buttons">
+      <button id="Intelligence-second-prev-btn">Prev</button>
+      <button id="Intelligence-second-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const midPopup = document.getElementById("mid-popup-call");
+    const intelligencePopup = document.getElementById("intelligence-selection-popup");
+    const intPrevBtn = document.getElementById("int-prev-btn");
+    const intNextBtn = document.getElementById("int-next-btn");
+    const intelligenceListItem = document.querySelector('li[data-target="intelligence-container"]');
+    const clipSegmentPopup = document.getElementById("Clip-segment-popup-1");
+    const clipNextBtn = document.getElementById("Clip-segment-popup-next-btn");
+    const bookCallBtn = document.getElementById("book-call-btn");
+    const continueTourBtn = document.getElementById("continue-tour-btn");
+    const firstPopup = document.querySelector(".intelligence-first-popup");
+    const firstPrevBtn = document.getElementById("Intelligence-first-prev-btn");
+    const firstNextBtn = document.getElementById("Intelligence-first-next-btn");
+    const secondPopup = document.getElementById("intelligence-second-popup");
+    const secondPrevBtn = document.getElementById("Intelligence-second-prev-btn");
+    const secondNextBtn = document.getElementById("Intelligence-second-next-btn");
+    const liveListItem = document.querySelector('li[data-target="live-container"]');
+    if (clipNextBtn) {
+      clipNextBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => {
+          if (clipSegmentPopup) clipSegmentPopup.style.display = "none";
+          if (midPopup) midPopup.style.display = "flex";
+        }, 400);
+      });
+    }
+    if (bookCallBtn) {
+      bookCallBtn.addEventListener("click", function () {
+        window.open("https://api.whatsapp.com/send?phone=447463151997", "_blank");
+      });
+    }
+    if (continueTourBtn) {
+      continueTourBtn.addEventListener("click", function () {
+        if (midPopup) midPopup.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => {
+          if (intelligencePopup) intelligencePopup.style.display = "flex";
+        }, 500);
+      });
+    }
+    if (intPrevBtn) {
+      intPrevBtn.addEventListener("click", function () {
+        if (intelligencePopup) intelligencePopup.style.display = "none";
+        if (midPopup) midPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (intNextBtn) {
+      intNextBtn.addEventListener("click", function () {
+        if (intelligencePopup) intelligencePopup.style.display = "none";
+        if (firstPopup) firstPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (intelligenceListItem) intelligenceListItem.click();
+      });
+    }
+    if (firstPrevBtn) {
+      firstPrevBtn.addEventListener("click", function () {
+        if (firstPopup) firstPopup.style.display = "none";
+        if (intelligencePopup) intelligencePopup.style.display = "flex";
+        if (liveListItem) liveListItem.click();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (firstNextBtn) {
+      firstNextBtn.addEventListener("click", function () {
+        if (firstPopup) firstPopup.style.display = "none";
+        if (secondPopup) secondPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (secondPrevBtn) {
+      secondPrevBtn.addEventListener("click", function () {
+        if (secondPopup) secondPopup.style.display = "none";
+        if (firstPopup) firstPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (secondNextBtn) {
+      secondNextBtn.addEventListener("click", function () {
+        if (secondPopup) secondPopup.style.display = "none";
+        window.scrollBy({ top: 800, behavior: "smooth" }); // Scrolls slightly down
+      });
+    }
+  });
+</script>
+
+<!-- Intelligence Second Popup  end-->
+
+<!-- Intelligence third Popup  -->
+<div id="intelligence-third-popup" class="intelligence-third-popup">
+  <div class="popup-container">
+    <p>Instantly turn insights into actions. Get daily, weekly, and monthly trends about vehicles at any of your locations</p>
+    <div class="buttons">
+      <button id="Intelligence-third-prev-btn">Prev</button>
+      <button id="Intelligence-third-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const secondPopup = document.getElementById("intelligence-second-popup");
+    const secondNextBtn = document.getElementById("Intelligence-second-next-btn");
+    const thirdPopup = document.getElementById("intelligence-third-popup");
+    const thirdPrevBtn = document.getElementById("Intelligence-third-prev-btn");
+    const thirdNextBtn = document.getElementById("Intelligence-third-next-btn");
+    if (secondNextBtn) {
+      secondNextBtn.addEventListener("click", function () {
+        if (secondPopup) secondPopup.style.display = "none";
+        window.scrollBy({ top: 800, behavior: "smooth" });
+        setTimeout(() => {
+          if (thirdPopup) thirdPopup.style.display = "flex";
+        }, 500); 
+      });
+    }
+    if (thirdPrevBtn) {
+      thirdPrevBtn.addEventListener("click", function () {
+        if (thirdPopup) thirdPopup.style.display = "none";
+        if (secondPopup) secondPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (thirdNextBtn) {
+      thirdNextBtn.addEventListener("click", function () {
+        if (thirdPopup) thirdPopup.style.display = "none";
+        window.scrollBy({ top: 500, behavior: "smooth" }); 
+      });
+    }
+  });
+</script>
+
+<!-- Intelligence third Popup  end-->
+
+<!-- Intelligence fourth Popup  -->
+ <div id="intelligence-fourth-popup">
+  <div class="popup-container">
+    <p>Relevant clips are also surfaced for visibility</p>
+    <div class="buttons">
+      <button id="Intelligence-fourth-prev-btn">Prev</button>
+      <button id="Intelligence-fourth-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const thirdPopup = document.getElementById("intelligence-third-popup");
+    const thirdPrevBtn = document.getElementById("Intelligence-third-prev-btn");
+    const thirdNextBtn = document.getElementById("Intelligence-third-next-btn");
+    const fourthPopup = document.getElementById("intelligence-fourth-popup");
+    const fourthPrevBtn = document.getElementById("Intelligence-fourth-prev-btn");
+    const fourthNextBtn = document.getElementById("Intelligence-fourth-next-btn");
+    const secondPopup = document.getElementById("intelligence-second-popup");
+    const secondNextBtn = document.getElementById("Intelligence-second-next-btn");
+    if (secondNextBtn) {
+      secondNextBtn.addEventListener("click", function () {
+        if (secondPopup) secondPopup.style.display = "none";
+        window.scrollTo({ top: 800, behavior: "smooth" });
+        setTimeout(() => {
+          if (thirdPopup) thirdPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (thirdNextBtn) {
+      thirdNextBtn.addEventListener("click", function () {
+        if (thirdPopup) thirdPopup.style.display = "none";
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        setTimeout(() => {
+          if (fourthPopup) fourthPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (thirdPrevBtn) {
+      thirdPrevBtn.addEventListener("click", function () {
+        if (thirdPopup) thirdPopup.style.display = "none";
+        if (secondPopup) secondPopup.style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+    if (fourthPrevBtn) {
+      fourthPrevBtn.addEventListener("click", function () {
+        if (fourthPopup) fourthPopup.style.display = "none";
+        window.scrollTo({ top: 300, behavior: "smooth" });
+        setTimeout(() => {
+          if (thirdPopup) thirdPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (fourthNextBtn) {
+      fourthNextBtn.addEventListener("click", function () {
+        if (fourthPopup) fourthPopup.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  });
+</script>
+<!-- Intelligence fourth Popup  end-->
+
+<!-- Intelligence Fifth Popup -->
+ <div class="intelligence-fifth-popup" id="intelligence-fifth-popup">
+  <div class="popup-container">
+    <p>Select Maintain</p>
+    <div class="buttons">
+      <button id="Intelligence-fifth-prev-btn">Prev</button>
+      <button id="Intelligence-fifth-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const thirdPopup = document.getElementById("intelligence-third-popup");
+    const fourthPopup = document.getElementById("intelligence-fourth-popup");
+    const fifthPopup = document.getElementById("intelligence-fifth-popup");
+    const fifthPrevBtn = document.getElementById("Intelligence-fifth-prev-btn");
+    const fifthNextBtn = document.getElementById("Intelligence-fifth-next-btn");
+    const fourthNextBtn = document.getElementById("Intelligence-fourth-next-btn");
+    if (fourthNextBtn) {
+      fourthNextBtn.addEventListener("click", function () {
+        if (fourthPopup) fourthPopup.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => {
+          if (fifthPopup) fifthPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (fifthPrevBtn) {
+      fifthPrevBtn.addEventListener("click", function () {
+        if (fifthPopup) fifthPopup.style.display = "none";
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        setTimeout(() => {
+          if (fourthPopup) fourthPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (fifthNextBtn) {
+      fifthNextBtn.addEventListener("click", function () {
+        if (fifthPopup) fifthPopup.style.display = "none";
+        const maintainLi = document.querySelector('li[data-target="maintain-container"]');
+        if (maintainLi) {
+          maintainLi.click();
+        }
+      });
+    }
+  });
+</script>
+<!-- Intelligence Fifth Popup End -->
     <!-- intelligence-container -->
 
     <!-- maintain-container -->
     <div id="maintain-container" class="content-container" style="display: none">
-      This is the Maintain container
+      <div id="maintainance-main-container">
+        <div id="maintainance-inner-container">
+          <div id="maintainance-top-container">
+            <div id="maintainance-top-left">
+              <img src="https://img.icons8.com/?size=100&id=TF8VFG5swSDU&format=png&color=000000" alt="">
+              <h3>150 Cameras</h3>
+            </div>
+            <div id="maintainance-top-right">
+              <img src="https://img.icons8.com/?size=100&id=NLkQnaGNI6T7&format=png&color=000000" alt="">
+              <h3>11 Appliances</h3>
+            </div>
+          </div>
+          <div id="maintainance-bottom-container">
+             <table id="intelligence-middle-table" class="intelligence-middle-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>ID No</th>
+        <th>Time Length</th>
+        <th>Day & Date of Entry</th>
+        <th>Day & Date of Exit</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>001</td>
+        <td>2h 30m</td>
+        <td>Mon, 2025-06-01</td>
+        <td>Mon, 2025-06-01</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>002</td>
+        <td>1h 45m</td>
+        <td>Tue, 2025-06-02</td>
+        <td>Tue, 2025-06-02</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>003</td>
+        <td>3h 15m</td>
+        <td>Wed, 2025-06-03</td>
+        <td>Wed, 2025-06-03</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 4 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>004</td>
+        <td>4h 00m</td>
+        <td>Thu, 2025-06-04</td>
+        <td>Thu, 2025-06-04</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      <!-- Row 5 -->
+      <tr>
+        <td><img src="SpotAi-Nattive-right-box-img.png" alt="Car" class="intelligence-middle-table-img"></td>
+        <td>005</td>
+        <td>1h 20m</td>
+        <td>Fri, 2025-06-05</td>
+        <td>Fri, 2025-06-05</td>
+        <td><button class="intelligence-middle-table-btn">To Play</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+     <!-- Maintainance First Popup -->
+<div class="maintainance-first-popup" id="maintainance-first-popup" style="display: none;">
+  <div class="popup-container">
+    <p>Never worry about missing footage again. See the connectivity status of all your cameras and get alerts if any cameras are disconnected.</p>
+    <div class="buttons">
+      <button id="maintainance-first-prev-btn">Prev</button>
+      <button id="maintainance-first-next-btn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const thirdPopup = document.getElementById("intelligence-third-popup");
+    const fourthPopup = document.getElementById("intelligence-fourth-popup");
+    const fifthPopup = document.getElementById("intelligence-fifth-popup");
+    const fifthPrevBtn = document.getElementById("Intelligence-fifth-prev-btn");
+    const fifthNextBtn = document.getElementById("Intelligence-fifth-next-btn");
+    const fourthNextBtn = document.getElementById("Intelligence-fourth-next-btn");
+    const maintainFirstPopup = document.getElementById("maintainance-first-popup");
+    const maintainFirstNextBtn = document.getElementById("maintainance-first-next-btn");
+    const maintainFirstPrevBtn = document.getElementById("maintainance-first-prev-btn");
+    const maintainLi = document.querySelector('li[data-target="maintain-container"]');
+    const intelligenceLi = document.querySelector('li[data-target="intelligence-container"]');
+    if (fourthNextBtn) {
+      fourthNextBtn.addEventListener("click", function () {
+        if (fourthPopup) fourthPopup.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => {
+          if (fifthPopup) fifthPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (fifthPrevBtn) {
+      fifthPrevBtn.addEventListener("click", function () {
+        if (fifthPopup) fifthPopup.style.display = "none";
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        setTimeout(() => {
+          if (fourthPopup) fourthPopup.style.display = "flex";
+        }, 600);
+      });
+    }
+    if (fifthNextBtn) {
+      fifthNextBtn.addEventListener("click", function () {
+        if (fifthPopup) fifthPopup.style.display = "none";
+        if (maintainLi) {
+          maintainLi.click();
+          setTimeout(() => {
+            if (maintainFirstPopup) {
+              maintainFirstPopup.style.display = "flex";
+              document.body.style.overflow = "hidden";
+            }
+          }, 500);
+        }
+      });
+    }
+    if (maintainFirstNextBtn) {
+      maintainFirstNextBtn.addEventListener("click", function () {
+        if (maintainFirstPopup) maintainFirstPopup.style.display = "none";
+        document.body.style.overflow = "auto";
+      });
+    }
+    if (maintainFirstPrevBtn) {
+      maintainFirstPrevBtn.addEventListener("click", function () {
+        if (maintainFirstPopup) maintainFirstPopup.style.display = "none";
+        document.body.style.overflow = "auto";
+        if (intelligenceLi) {
+          intelligenceLi.click();
+          setTimeout(() => {
+            if (fifthPopup) {
+              fifthPopup.style.display = "flex";
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }, 500);
+        }
+      });
+    }
+  });
+</script>
+<!-- Maintainance First Popup -->
+
+<!-- Maintainance LAst Popup -->
+ <div class="maintainance-last-popup" id="maintainance-last-popup" style="display: none;">
+  <div class="popup-container">
+    <p>Want to learn more about how Spot AI can help you build safer workplaces and smarter operations?</p>
+    <div class="buttons">
+      <a href="https://api.whatsapp.com/send?phone=447463151997" target="_blank">
+        <button>Check Pricing</button>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const maintainFirstPopup = document.getElementById("maintainance-first-popup");
+    const maintainFirstNextBtn = document.getElementById("maintainance-first-next-btn");
+
+    const maintainLastPopup = document.getElementById("maintainance-last-popup");
+
+    // Show first popup on load
+    if (maintainFirstPopup) {
+      maintainFirstPopup.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+
+    // When "Next" is clicked on the first popup
+    if (maintainFirstNextBtn) {
+      maintainFirstNextBtn.addEventListener("click", function () {
+        if (maintainFirstPopup) maintainFirstPopup.style.display = "none";
+
+        // Show the last popup
+        if (maintainLastPopup) {
+          maintainLastPopup.style.display = "flex";
+        }
+
+        document.body.style.overflow = "hidden"; // Keep background fixed
+      });
+    }
+
+    // (Optional) if you want to manually trigger the last popup elsewhere:
+    window.showMaintainanceLastPopup = function () {
+      if (maintainLastPopup) {
+        maintainLastPopup.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+    };
+  });
+</script>
+
+<!-- Maintainance LAst Popup End-->
     <!-- maintain-container -->
 
     <!-- Main Script for Display  -->

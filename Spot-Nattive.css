@@ -1705,6 +1705,7 @@ nav ul li {
 }
 #intelligence-middle-table tr:hover {
   background-color: #f1f1f1;
+  color: #0056b3;
 }
 .intelligence-middle-table-img {
   width: 50px;
@@ -1726,4 +1727,520 @@ nav ul li {
   background-color: #0056b3;
 }
 /* Intelligence-Parking-lot-Analysis-bottom-container */
+
+/* Intelligence First Popup */
+.intelligence-first-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.intelligence-first-popup .popup-container {
+  background: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.intelligence-first-popup .popup-container p {
+  font-size: small;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intelligence-first-popup .buttons {
+  display: flex;
+  justify-content:center;
+  gap: 50px;
+}
+
+.intelligence-first-popup .buttons button {
+  padding: 5px 10px;
+  font-size: small;
+  width: fit-content;
+  border: none;
+  background-color: #0052cc;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.intelligence-first-popup .buttons button:hover {
+  background-color: #003d99;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Intelligence First Popup End */
+
+/* Intelligence Second Popup */
+.intelligence-second-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.intelligence-second-popup .popup-container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%,-50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.intelligence-second-popup .popup-container p {
+  font-size: small;
+  margin-bottom: 20px;
+  color: #333;
+}
+.intelligence-second-popup .popup-container .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.intelligence-second-popup .popup-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0056b3;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.intelligence-second-popup .popup-container button:hover {
+  background: #004494;
+}
+
+/* Intelligence Second Popup  End*/
+
+/* Intelligence Third */
+.intelligence-third-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.intelligence-third-popup .popup-container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.intelligence-third-popup .popup-container p {
+  font-size: small;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intelligence-third-popup .popup-container .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.intelligence-third-popup .popup-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0056b3;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.intelligence-third-popup .popup-container button:hover {
+  background: #004494;
+}
+
+/* Intelligence Third */
+
+/* Fourth Intelligence Popup Styles */
+/* Fourth Intelligence Popup Styles */
+#intelligence-fourth-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#intelligence-fourth-popup .popup-container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#intelligence-fourth-popup .popup-container p {
+  font-size: small;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#intelligence-fourth-popup .popup-container .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#intelligence-fourth-popup .popup-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0056b3;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#intelligence-fourth-popup .popup-container button:hover {
+  background: #004494;
+}
+/* Fourth Intelligence Popup Styles */
+
+/* <!-- Intelligence Fifth Popup --> */
+.intelligence-fifth-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.intelligence-fifth-popup .popup-container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  width: 300px;
+  position: absolute;
+  left: 40%;
+  top: 100px;
+  transform: translate(50%,-50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.intelligence-fifth-popup .popup-container p {
+  font-size: small;
+  margin-bottom: 20px;
+  color: #333;
+}
+.intelligence-fifth-popup .popup-container .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.intelligence-fifth-popup .popup-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0056b3;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.intelligence-fifth-popup .popup-container button:hover {
+  background: #004494;
+}
+/* <!-- Intelligence Fifth Popup --> */
+@media (max-width: 991px) {
+  .intelligence-second-popup .popup-container{
+    top: 60%;
+  }
+  .intelligence-third-popup .popup-container {
+    top: 80%;
+  }
+  .intelligence-fifth-popup .popup-container {
+    left: 30%;
+    top: 85px;
+  }
+}
+@media (min-width: 1700px) {
+.intelligence-second-popup .popup-container{
+    top: 55%;
+    left: 10%;
+  }
+  .intelligence-third-popup .popup-container {
+    left: 20%;
+  }
+}
+@media (min-width: 2300px) {
+.intelligence-second-popup .popup-container{
+    top: 40%;
+    left: 20%;
+  }
+  .intelligence-third-popup .popup-container {
+    left: 50%;
+  }
+  .intelligence-fifth-popup .popup-container {
+    left: 42%;
+    top: 90px;
+  }
+  .mid-popup-call .popup-container p ,.intelligence-first-popup .popup-container p ,.intelligence-second-popup .popup-container p ,.intelligence-third-popup .popup-container p ,#intelligence-fourth-popup .popup-container p ,.intelligence-fifth-popup .popup-container p {
+    font-size: large;
+  }
+}
+@media (min-width: 2800px) {
+#intelligence-fourth-popup .popup-container {
+  top: 70%;
+}
+    .intelligence-fifth-popup .popup-container {
+        left: 45%;
+        top: 95px;
+    }
+}
+@media (min-width: 3000px){
+      .intelligence-second-popup .popup-container {
+        top: 25%;
+        left: 30%;
+    }
+} 
 /* Intelligence Page End */
+
+
+/* Maintainacne  Page*/
+#maintainance-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+#maintainance-inner-container{
+  height: fit-content;
+  width: 95%;
+  margin-top: 100px;
+  max-width: 1400px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 1px 1px 5px gray;
+}
+#maintainance-top-container{
+  height: 120px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  align-items: center;
+}
+#maintainance-top-left{
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  box-shadow: 1px 1px 5px gainsboro;
+  align-items: center;
+}
+#maintainance-top-left img{
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+#maintainance-top-left h3{
+  color: #0052cc;
+  font-size: xx-large;
+}
+#maintainance-top-right{
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  padding: 0 5px;
+  gap: 20px;
+  justify-content: center;
+  box-shadow: 1px 1px 5px gainsboro;
+  align-items: center;
+}
+#maintainance-top-right img{
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+#maintainance-top-right h3{
+  color: #0052cc;
+  font-size: xx-large;
+}
+
+
+#maintainance-bottom-container{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#maintainance-bottom-container table{
+     width: 100%;
+    max-width: 1400px;
+}
+
+
+/* Maintainance First Popup */
+.maintainance-first-popup {
+  display: none; /* Hidden initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+.maintainance-first-popup .popup-container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+.maintainance-first-popup p {
+  font-size: small;
+  color: #333;
+  margin-bottom: 25px;
+}
+.maintainance-first-popup .buttons button {
+  padding: 5px 10px;
+  background-color: #0056b3;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: small;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.maintainance-first-popup .buttons button:hover {
+  background-color: #004494;
+}
+
+/* Maintainance First Popup End */
+
+/* Maintainance Last Popup */
+ .maintainance-last-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .maintainance-last-popup .popup-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .maintainance-last-popup .popup-container p {
+    font-size: small;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .maintainance-last-popup .buttons button {
+    padding:  5px 10px;
+    font-size: small;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .maintainance-last-popup .buttons button:hover {
+    background-color: #004494;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+/* Maintainance Last PopupEnd */
+
+/* Maintainacne  Page ENd*/
